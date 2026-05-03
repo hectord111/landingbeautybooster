@@ -6,7 +6,7 @@ const testimonials = [
     name: "Carlos Martínez",
     role: "Propietario de BarberKing",
     location: "Madrid",
-    text: "Desde que implementamos BarberBoost, las reservas aumentaron un 60%. Ya no perdemos tiempo con llamadas y los clientes nos encuentran fácilmente en Google Maps.",
+    text: "Desde que implementamos BarberBooster, las reservas aumentaron un 60%. Ya no perdemos tiempo con llamadas y los clientes nos encuentran fácilmente en Google Maps.",
     stars: 5,
   },
   {

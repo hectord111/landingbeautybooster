@@ -12,7 +12,7 @@ export default function Footer() {
                 BARBER
               </span>
               <span className="font-display text-3xl tracking-wide text-foreground">
-                BOOST
+                BOOSTER
               </span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
@@ -103,7 +103,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="pt-8 border-t border-border/50 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground">
-            © 2026 BarberBoost. Todos los derechos reservados.
+            © 2026 BarberBooster. Todos los derechos reservados.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-xs text-muted-foreground hover:text-gold transition-colors">

@@ -59,7 +59,7 @@ export default function Benefits() {
             Beneficios
           </p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-wide">
-            ¿POR QUÉ <span className="text-gold">BARBERBOOST</span>?
+            ¿POR QUÉ <span className="text-gold">BARBERBOOSTER</span>?
           </h2>
         </motion.div>
 

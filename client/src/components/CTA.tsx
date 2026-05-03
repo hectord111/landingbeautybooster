@@ -68,7 +68,7 @@ export default function CTA() {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground">Email</p>
-                  <p className="text-foreground font-medium">hola@barberboost.es</p>
+                  <p className="text-foreground font-medium">hola@barberbooster.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">

@@ -35,7 +35,7 @@ export default function Navbar() {
             BARBER
           </span>
           <span className="font-display text-3xl md:text-4xl tracking-wide text-foreground">
-            BOOST
+            BOOSTER
           </span>
         </a>
 
