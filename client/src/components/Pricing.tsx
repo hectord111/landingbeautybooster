@@ -12,7 +12,7 @@ const services = [
     setup: "89€ de configuración inicial",
     features: [
       "Calendario inteligente con gestión de barberos",
-      "Recordatorios automáticos por WhatsApp y SMS",
+      "Recordatorios automáticos a tus clientes",
       "Panel de control con métricas en tiempo real",
       "Personalizado con tu marca y colores",
       "Soporte técnico incluido",

@@ -10,7 +10,7 @@ const services = [
       "Desarrollamos un sistema de reservas a medida con tu marca, colores y estilo. Tus clientes reservan 24/7 desde cualquier dispositivo sin llamadas ni esperas.",
     features: [
       "Calendario inteligente con gestión de barberos",
-      "Recordatorios automáticos por WhatsApp y SMS",
+      "Recordatorios automáticos a tus clientes",
       "Panel de control con métricas en tiempo real",
       "Integración con redes sociales",
     ],
