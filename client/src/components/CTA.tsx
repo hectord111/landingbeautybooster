@@ -24,7 +24,7 @@ export default function CTA() {
       <div className="absolute inset-0 opacity-10">
         <img
           src="https://d2xsxph8kpxj0f.cloudfront.net/310519663399306078/VfcBb45G5ghCMm6VPu8Ur7/barber-tools-pattern-Kho7As2waBjc29aLCebMzD.webp"
-          alt=""
+          alt="Herramientas de barbería sobre fondo oscuro"
           className="w-full h-full object-cover"
         />
       </div>
