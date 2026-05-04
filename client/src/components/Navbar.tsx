@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ExternalLink } from "lucide-react";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -52,9 +52,18 @@ export default function Navbar() {
           ))}
           <a
             href="#contacto"
-            className="px-6 py-2.5 bg-gold text-primary-foreground font-semibold text-sm rounded-sm hover:bg-gold-light transition-all duration-300 hover:shadow-[0_0_20px_oklch(0.78_0.12_75/0.3)]"
+            className="px-6 py-2.5 border border-gold/50 text-gold font-semibold text-sm rounded-sm hover:bg-gold/10 transition-all duration-300"
           >
             Contactar
+          </a>
+          <a
+            href="https://barberbooster.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-2.5 bg-gold text-primary-foreground font-semibold text-sm rounded-sm hover:bg-gold-light transition-all duration-300 hover:shadow-[0_0_20px_oklch(0.78_0.12_75/0.3)]"
+          >
+            Acceder a la App
+            <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>
 
@@ -90,9 +99,18 @@ export default function Navbar() {
               <a
                 href="#contacto"
                 onClick={() => setMobileOpen(false)}
-                className="mt-2 px-6 py-3 bg-gold text-primary-foreground font-semibold text-sm rounded-sm text-center"
+                className="mt-2 px-6 py-3 border border-gold/50 text-gold font-semibold text-sm rounded-sm text-center"
               >
                 Contactar
+              </a>
+              <a
+                href="https://barberbooster.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 px-6 py-3 bg-gold text-primary-foreground font-semibold text-sm rounded-sm text-center"
+              >
+                Acceder a la App
+                <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>
           </motion.div>
