@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Send, Phone, Mail, MapPin } from "lucide-react";
+import { Send, Phone, Mail } from "lucide-react";
 import { toast } from "sonner";
 
 export default function CTA() {
@@ -71,15 +71,7 @@ export default function CTA() {
                   <p className="text-foreground font-medium">hola@barberbooster.com</p>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 flex items-center justify-center border border-gold/20 rounded-sm">
-                  <MapPin className="w-4 h-4 text-gold" />
-                </div>
-                <div>
-                  <p className="text-xs text-muted-foreground">Ubicación</p>
-                  <p className="text-foreground font-medium">España · 100% Remoto</p>
-                </div>
-              </div>
+
             </div>
           </motion.div>
 
