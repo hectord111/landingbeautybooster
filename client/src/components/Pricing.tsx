@@ -11,9 +11,9 @@ const services = [
     priceNote: "€/mes + IVA",
     setup: "89€ de configuración inicial",
     features: [
-      "Calendario inteligente con gestión de barberos",
+      "Gestión de múltiples barberías y barberos",
+      "Control de horarios individuales por barbero",
       "Recordatorios automáticos a tus clientes",
-      "Panel de control con métricas en tiempo real",
       "Personalizado con tu marca y colores",
       "Soporte técnico incluido",
     ],

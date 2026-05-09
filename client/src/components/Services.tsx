@@ -7,12 +7,12 @@ const services = [
     title: "SISTEMA DE CITAS",
     subtitle: "Personalizado para tu barbería",
     description:
-      "Desarrollamos un sistema de reservas a medida con tu marca, colores y estilo. Tus clientes reservan 24/7 desde cualquier dispositivo sin llamadas ni esperas.",
+      "Desarrollamos un sistema de reservas a medida con tu marca, colores y estilo. Gestiona varias barberías y barberos desde un solo panel. Tus clientes reservan 24/7 desde cualquier dispositivo.",
     features: [
-      "Calendario inteligente con gestión de barberos",
+      "Gestión de múltiples barberías y barberos",
+      "Control de horarios individuales por barbero",
       "Recordatorios automáticos a tus clientes",
       "Panel de control con métricas en tiempo real",
-      "Integración con redes sociales",
     ],
     image:
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663399306078/VfcBb45G5ghCMm6VPu8Ur7/booking-system-mockup-g7TV5az6cvpxbJKMCKjL2T.webp",
