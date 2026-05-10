@@ -1,37 +1,37 @@
 import { motion } from "framer-motion";
-import { Calendar, MapPin, Check } from "lucide-react";
+import { User, Users, Check } from "lucide-react";
 
-const services = [
+const plans = [
   {
-    icon: Calendar,
-    name: "SISTEMA DE CITAS",
+    icon: User,
+    name: "BARBERO ÚNICO",
     description:
-      "Tu sistema de reservas personalizado con tu marca, colores y estilo. Tus clientes reservan 24/7 desde cualquier dispositivo.",
-    price: "35",
+      "Ideal para barberías con un solo barbero. Tu sistema de citas personalizado con todo lo que necesitas.",
+    price: "19",
     priceNote: "€/mes + IVA",
-    setup: "89€ de configuración inicial",
     features: [
-      "Gestión de múltiples barberías y barberos",
-      "Control de horarios individuales por barbero",
+      "1 barbero con gestión de horarios",
+      "Reservas online 24/7",
       "Recordatorios automáticos a tus clientes",
       "Personalizado con tu marca y colores",
       "Soporte técnico incluido",
     ],
   },
   {
-    icon: MapPin,
-    name: "POSICIONAMIENTO GOOGLE MAPS",
+    icon: Users,
+    name: "BARBEROS ILIMITADOS",
     description:
-      "Optimizamos tu perfil de Google Business para que aparezcas en las primeras posiciones cuando busquen barberías cerca.",
-    price: "30",
+      "Para barberías con equipo. Gestiona todos tus barberos, horarios y sedes desde un solo panel.",
+    price: "29",
     priceNote: "€/mes + IVA",
-    setup: null,
+    popular: true,
     features: [
-      "Optimización completa de Google Business Profile",
-      "Estrategia de reseñas y reputación online",
-      "SEO local con keywords de tu zona",
-      "Informes mensuales de rendimiento",
-      "Más visibilidad, más clientes",
+      "Barberos ilimitados con horarios individuales",
+      "Gestión de múltiples sedes",
+      "Reservas online 24/7",
+      "Recordatorios automáticos a tus clientes",
+      "Personalizado con tu marca y colores",
+      "Soporte técnico prioritario",
     ],
   },
 ];
@@ -61,15 +61,24 @@ export default function Pricing() {
 
         {/* Pricing Cards */}
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {services.map((service, index) => (
+          {plans.map((plan, index) => (
             <motion.div
-              key={service.name}
+              key={plan.name}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="relative p-8 lg:p-10 rounded-sm border border-border bg-card hover:border-gold/30 transition-all duration-500 group flex flex-col"
+              className={`relative p-8 lg:p-10 rounded-sm border bg-card hover:border-gold/30 transition-all duration-500 group flex flex-col ${
+                plan.popular ? "border-gold/50" : "border-border"
+              }`}
             >
+              {/* Popular badge */}
+              {plan.popular && (
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gold text-primary-foreground text-xs font-semibold tracking-wider rounded-sm">
+                  POPULAR
+                </div>
+              )}
+
               {/* Hover glow */}
               <div className="absolute inset-0 bg-gradient-to-br from-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-sm" />
 
@@ -77,38 +86,33 @@ export default function Pricing() {
                 {/* Icon + Name */}
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 flex items-center justify-center border border-gold/20 rounded-sm">
-                    <service.icon className="w-5 h-5 text-gold" />
+                    <plan.icon className="w-5 h-5 text-gold" />
                   </div>
                   <h3 className="font-display text-xl tracking-wider text-foreground">
-                    {service.name}
+                    {plan.name}
                   </h3>
                 </div>
 
                 {/* Description */}
                 <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                  {service.description}
+                  {plan.description}
                 </p>
 
                 {/* Price */}
                 <div className="mb-6">
                   <div className="flex items-baseline gap-1">
                     <span className="font-display text-5xl text-foreground">
-                      {service.price}
+                      {plan.price}
                     </span>
                     <span className="text-muted-foreground text-sm">
-                      {service.priceNote}
+                      {plan.priceNote}
                     </span>
                   </div>
-                  {service.setup && (
-                    <p className="text-xs text-gold mt-2 font-medium">
-                      + {service.setup} (pago único)
-                    </p>
-                  )}
                 </div>
 
                 {/* Features */}
                 <ul className="space-y-3 mb-8 flex-1">
-                  {service.features.map((feature) => (
+                  {plan.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-3">
                       <Check className="w-4 h-4 text-gold mt-0.5 shrink-0" />
                       <span className="text-sm text-foreground/80">{feature}</span>
@@ -119,7 +123,11 @@ export default function Pricing() {
                 {/* CTA */}
                 <a
                   href="#contacto"
-                  className="block text-center py-3.5 rounded-sm font-semibold text-sm border border-gold/50 text-gold hover:bg-gold hover:text-primary-foreground transition-all duration-300"
+                  className={`block text-center py-3.5 rounded-sm font-semibold text-sm transition-all duration-300 ${
+                    plan.popular
+                      ? "bg-gold text-primary-foreground hover:bg-gold-light hover:shadow-[0_0_20px_oklch(0.78_0.12_75/0.3)]"
+                      : "border border-gold/50 text-gold hover:bg-gold hover:text-primary-foreground"
+                  }`}
                 >
                   Solicitar Info
                 </a>
@@ -128,7 +136,7 @@ export default function Pricing() {
           ))}
         </div>
 
-        {/* Combo note */}
+        {/* Note */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -138,7 +146,7 @@ export default function Pricing() {
         >
           <div className="inline-flex items-center gap-2 px-6 py-3 border border-gold/20 rounded-sm bg-gold/5">
             <span className="text-sm text-foreground">
-              Contrata ambos servicios y obtén un <span className="text-gold font-semibold">precio especial</span>
+              Posicionamiento en Google Maps disponible como <span className="text-gold font-semibold">servicio adicional</span>
             </span>
           </div>
         </motion.div>
