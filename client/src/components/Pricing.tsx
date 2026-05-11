@@ -9,6 +9,7 @@ const plans = [
       "Ideal para barberías con un solo barbero. Tu sistema de citas personalizado con todo lo que necesitas.",
     price: "19",
     priceNote: "€/mes + IVA",
+    setup: "89€ de configuración inicial",
     features: [
       "1 barbero con gestión de horarios",
       "Reservas online 24/7",
@@ -24,6 +25,7 @@ const plans = [
       "Para barberías con equipo. Gestiona todos tus barberos, horarios y sedes desde un solo panel.",
     price: "29",
     priceNote: "€/mes + IVA",
+    setup: "89€ de configuración inicial",
     popular: true,
     features: [
       "Barberos ilimitados con horarios individuales",
@@ -108,6 +110,11 @@ export default function Pricing() {
                       {plan.priceNote}
                     </span>
                   </div>
+                  {plan.setup && (
+                    <p className="text-xs text-gold mt-2 font-medium">
+                      + {plan.setup} (pago único)
+                    </p>
+                  )}
                 </div>
 
                 {/* Features */}
