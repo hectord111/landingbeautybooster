@@ -59,7 +59,7 @@ export default function CTA() {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground">Teléfono</p>
-                  <p className="text-foreground font-medium">+34 612 345 678</p>
+                  <p className="text-foreground font-medium">+34 667 281 362</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
