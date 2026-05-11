@@ -8,7 +8,7 @@ const plans = [
     description:
       "Ideal para barberías con un solo barbero. Tu sistema de citas personalizado con todo lo que necesitas.",
     price: "19",
-    priceNote: "€/mes + IVA",
+    priceNote: "€/mes",
     setup: "89€ de configuración inicial",
     features: [
       "1 barbero con gestión de horarios",
@@ -24,7 +24,7 @@ const plans = [
     description:
       "Para barberías con equipo. Gestiona todos tus barberos, horarios y sedes desde un solo panel.",
     price: "29",
-    priceNote: "€/mes + IVA",
+    priceNote: "€/mes",
     setup: "89€ de configuración inicial",
     popular: true,
     features: [
