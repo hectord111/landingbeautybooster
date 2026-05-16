@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { Calendar, MapPin, Smartphone, TrendingUp } from "lucide-react";
+import { Calendar, Globe, MapPin } from "lucide-react";
 
 const services = [
   {
     icon: Calendar,
     title: "SISTEMA DE CITAS",
-    subtitle: "Personalizado para tu barbería",
+    subtitle: "Gestión completa de tu barbería",
     description:
       "Desarrollamos un sistema de reservas a medida con tu marca, colores y estilo. Gestiona varias barberías y barberos desde un solo panel. Tus clientes reservan 24/7 desde cualquier dispositivo.",
     features: [
@@ -14,8 +14,21 @@ const services = [
       "Recordatorios automáticos a tus clientes",
       "Panel de control con métricas en tiempo real",
     ],
-    image:
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663399306078/VfcBb45G5ghCMm6VPu8Ur7/booking-system-mockup-g7TV5az6cvpxbJKMCKjL2T.webp",
+    image: "/manus-storage/dashboard-screenshot_9eb38db3.png",
+  },
+  {
+    icon: Globe,
+    title: "WEB PERSONALIZADA DE RESERVAS",
+    subtitle: "Tu página profesional de reservas",
+    description:
+      "Creamos una web de reservas totalmente personalizada con la imagen de tu barbería. Tus clientes pueden reservar en menos de 30 segundos con una experiencia premium que refleja tu marca.",
+    features: [
+      "Diseño personalizado con tu marca y colores",
+      "Reserva online en menos de 30 segundos",
+      "Enlace público para compartir con clientes",
+      "Optimizada para móvil y escritorio",
+    ],
+    image: "/manus-storage/booking-web-screenshot_d8d4f0e6.png",
   },
   {
     icon: MapPin,
