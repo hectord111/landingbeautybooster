@@ -37,7 +37,7 @@ export default function PrivacyPolicy() {
             </p>
             <ul>
               <li>
-                <strong>Titular:</strong> Hector Díaz Gonzá
+                <strong>Titular:</strong> Hector Díaz González
               </li>
               <li>
                 <strong>Domicilio:</strong> Calle Creu dels Molers 39, 08004
@@ -45,8 +45,8 @@ export default function PrivacyPolicy() {
               </li>
               <li>
                 <strong>Correo electrónico:</strong>{" "}
-                <a href="mailto:contacto@dialezproperties.es">
-                  contacto@dialezproperties.es
+                <a href="mailto:admin@barberbooster.app">
+                  admin@barberbooster.app
                 </a>
               </li>
             </ul>
@@ -142,8 +142,8 @@ export default function PrivacyPolicy() {
             <p>
               Puedes ejercer en cualquier momento los siguientes derechos
               dirigiéndote a{" "}
-              <a href="mailto:contacto@dialezproperties.es">
-                contacto@dialezproperties.es
+              <a href="mailto:admin@barberbooster.app">
+                admin@barberbooster.app
               </a>
               , indicando el derecho que deseas ejercer y adjuntando copia de un
               documento que acredite tu identidad:
