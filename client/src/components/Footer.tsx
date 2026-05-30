@@ -1,4 +1,5 @@
 import { Instagram, Facebook, Linkedin } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Footer() {
   return (
@@ -106,12 +107,12 @@ export default function Footer() {
             © 2026 BarberBooster. Todos los derechos reservados.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-xs text-muted-foreground hover:text-gold transition-colors">
+            <Link href="/privacidad" className="text-xs text-muted-foreground hover:text-gold transition-colors">
               Política de Privacidad
-            </a>
-            <a href="#" className="text-xs text-muted-foreground hover:text-gold transition-colors">
+            </Link>
+            <Link href="/terminos" className="text-xs text-muted-foreground hover:text-gold transition-colors">
               Términos de Uso
-            </a>
+            </Link>
           </div>
         </div>
       </div>
