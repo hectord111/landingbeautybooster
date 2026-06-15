@@ -44,6 +44,20 @@ const plans = [
       "Control de horarios por barbero",
     ],
   },
+  {
+    name: "Unlimited anual",
+    subtitle: "Para barberías con 2 barberos o más",
+    price: "299",
+    priceNote: "€/año",
+    bestValue: true,
+    description:
+      "Ahorra 49€ al año. Para los que van en serio.",
+    savingsNote: "= 24,90€/mes",
+    originalPrice: "29€/mes",
+    features: [
+      "Todo lo del plan Unlimited",
+    ],
+  },
 ];
 
 export default function Pricing() {
@@ -73,7 +87,7 @@ export default function Pricing() {
         </motion.div>
 
         {/* Pricing Cards */}
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-12">
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-12">
           {plans.map((plan, index) => (
             <motion.div
               key={plan.name}
@@ -81,9 +95,11 @@ export default function Pricing() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className={`relative p-8 lg:p-10 rounded-lg border bg-card transition-all duration-500 group flex flex-col ${
+              className={`relative p-7 lg:p-8 rounded-lg border bg-card transition-all duration-500 group flex flex-col ${
                 plan.popular
                   ? "border-gold/50 shadow-[0_0_30px_oklch(0.78_0.12_75/0.08)]"
+                  : plan.bestValue
+                  ? "border-gold/30"
                   : "border-border"
               }`}
             >
@@ -93,13 +109,19 @@ export default function Pricing() {
                   Más popular
                 </div>
               )}
+              {/* Best value badge */}
+              {plan.bestValue && (
+                <div className="absolute -top-3 right-6 px-4 py-1 border border-gold/50 text-gold text-xs font-semibold tracking-wider rounded-full bg-card">
+                  Mejor precio
+                </div>
+              )}
 
               {/* Plan Name & Subtitle */}
-              <div className="mb-6">
-                <h3 className="font-display text-2xl tracking-wide text-foreground">
+              <div className="mb-5">
+                <h3 className="font-display text-xl tracking-wide text-foreground">
                   {plan.name}
                 </h3>
-                <p className="text-sm text-muted-foreground mt-1">
+                <p className="text-xs text-muted-foreground mt-1">
                   {plan.subtitle}
                 </p>
               </div>
@@ -107,13 +129,19 @@ export default function Pricing() {
               {/* Price */}
               <div className="mb-4">
                 <div className="flex items-baseline gap-1">
-                  <span className="font-display text-5xl md:text-6xl text-foreground">
+                  <span className="font-display text-4xl md:text-5xl text-foreground">
                     {plan.price}
                   </span>
                   <span className="text-muted-foreground text-sm">
                     {plan.priceNote}
                   </span>
                 </div>
+                {plan.savingsNote && (
+                  <p className="text-xs text-muted-foreground mt-1">
+                    {plan.savingsNote}{" "}
+                    <span className="line-through">{plan.originalPrice}</span>
+                  </p>
+                )}
                 {plan.setup && (
                   <p className="text-xs text-gold mt-2 font-medium">
                     + {plan.setup} (pago único)
@@ -122,7 +150,7 @@ export default function Pricing() {
               </div>
 
               {/* Description */}
-              <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+              <p className="text-sm text-muted-foreground leading-relaxed mb-5">
                 {plan.description}
               </p>
 
