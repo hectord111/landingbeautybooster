@@ -1,44 +1,58 @@
 import { motion } from "framer-motion";
-import { User, Users, Check } from "lucide-react";
+import { Check, ChevronDown, ChevronUp } from "lucide-react";
+import { useState } from "react";
 
 const plans = [
   {
-    icon: User,
-    name: "BARBERO ÚNICO",
-    description:
-      "Ideal para barberías con un solo barbero. Tu sistema de citas personalizado con todo lo que necesitas.",
+    name: "Independent",
+    subtitle: "Para un solo barbero",
     price: "19",
     priceNote: "€/mes",
     setup: "89€ de configuración inicial",
+    description:
+      "Para barberos autónomos que quieren dejar de improvisar.",
     features: [
-      "1 barbero con gestión de horarios",
+      "Agenda inteligente",
       "Reservas online 24/7",
-      "Recordatorios automáticos a tus clientes",
-      "Personalizado con tu marca y colores",
-      "Soporte técnico incluido",
+      "Gestión completa de clientes",
+      "Recordatorios automáticos",
+      "Estadísticas detalladas",
+      "Control de horarios",
+      "URL personalizada de reservas",
+      "Web de reservas con tu marca",
+      "Código QR para tu barbería",
+      "Reseñas de clientes",
+      "Galería de trabajos",
+      "Gestión de servicios ilimitados",
+      "Soporte por WhatsApp",
     ],
   },
   {
-    icon: Users,
-    name: "BARBEROS ILIMITADOS",
-    description:
-      "Para barberías con equipo. Gestiona todos tus barberos, horarios y sedes desde un solo panel.",
+    name: "Unlimited",
+    subtitle: "Para barberías con 2 barberos o más",
     price: "29",
     priceNote: "€/mes",
     setup: "89€ de configuración inicial",
     popular: true,
+    description:
+      "Para barberías con equipo que quieren el control total.",
     features: [
-      "Barberos ilimitados con horarios individuales",
-      "Gestión de múltiples sedes",
-      "Reservas online 24/7",
-      "Recordatorios automáticos a tus clientes",
-      "Personalizado con tu marca y colores",
-      "Soporte técnico prioritario",
+      "Todo lo del plan Independent",
+      "Barberos ilimitados",
+      "Gestión de equipo completa",
+      "Multicuenta (varias barberías)",
+      "Control de horarios por barbero",
     ],
   },
 ];
 
 export default function Pricing() {
+  const [expandedPlan, setExpandedPlan] = useState<number | null>(null);
+
+  const toggleExpand = (index: number) => {
+    setExpandedPlan(expandedPlan === index ? null : index);
+  };
+
   return (
     <section id="precios" className="py-24 md:py-32 relative">
       <div className="container relative z-10">
@@ -48,21 +62,18 @@ export default function Pricing() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16 max-w-2xl mx-auto"
+          className="text-center mb-6"
         >
-          <p className="text-gold font-medium text-sm tracking-widest uppercase mb-3">
-            Precios
-          </p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-wide">
-            PRECIOS <span className="text-gold">CLAROS</span>
+            Elige tu plan
           </h2>
-          <p className="text-muted-foreground mt-4">
-            Sin permanencia. Sin letra pequeña. Cancela cuando quieras.
+          <p className="text-muted-foreground mt-4 text-sm">
+            15 días gratis · Sin permanencia · Sin excusas
           </p>
         </motion.div>
 
         {/* Pricing Cards */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-12">
           {plans.map((plan, index) => (
             <motion.div
               key={plan.name}
@@ -70,75 +81,94 @@ export default function Pricing() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className={`relative p-8 lg:p-10 rounded-sm border bg-card hover:border-gold/30 transition-all duration-500 group flex flex-col ${
-                plan.popular ? "border-gold/50" : "border-border"
+              className={`relative p-8 lg:p-10 rounded-lg border bg-card transition-all duration-500 group flex flex-col ${
+                plan.popular
+                  ? "border-gold/50 shadow-[0_0_30px_oklch(0.78_0.12_75/0.08)]"
+                  : "border-border"
               }`}
             >
               {/* Popular badge */}
               {plan.popular && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gold text-primary-foreground text-xs font-semibold tracking-wider rounded-sm">
-                  POPULAR
+                <div className="absolute -top-3 right-6 px-4 py-1 bg-gold text-primary-foreground text-xs font-semibold tracking-wider rounded-full">
+                  Más popular
                 </div>
               )}
 
-              {/* Hover glow */}
-              <div className="absolute inset-0 bg-gradient-to-br from-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-sm" />
-
-              <div className="relative z-10 flex flex-col flex-1">
-                {/* Icon + Name */}
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 flex items-center justify-center border border-gold/20 rounded-sm">
-                    <plan.icon className="w-5 h-5 text-gold" />
-                  </div>
-                  <h3 className="font-display text-xl tracking-wider text-foreground">
-                    {plan.name}
-                  </h3>
-                </div>
-
-                {/* Description */}
-                <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                  {plan.description}
+              {/* Plan Name & Subtitle */}
+              <div className="mb-6">
+                <h3 className="font-display text-2xl tracking-wide text-foreground">
+                  {plan.name}
+                </h3>
+                <p className="text-sm text-muted-foreground mt-1">
+                  {plan.subtitle}
                 </p>
-
-                {/* Price */}
-                <div className="mb-6">
-                  <div className="flex items-baseline gap-1">
-                    <span className="font-display text-5xl text-foreground">
-                      {plan.price}
-                    </span>
-                    <span className="text-muted-foreground text-sm">
-                      {plan.priceNote}
-                    </span>
-                  </div>
-                  {plan.setup && (
-                    <p className="text-xs text-gold mt-2 font-medium">
-                      + {plan.setup} (pago único)
-                    </p>
-                  )}
-                </div>
-
-                {/* Features */}
-                <ul className="space-y-3 mb-8 flex-1">
-                  {plan.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-3">
-                      <Check className="w-4 h-4 text-gold mt-0.5 shrink-0" />
-                      <span className="text-sm text-foreground/80">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                {/* CTA */}
-                <a
-                  href="#contacto"
-                  className={`block text-center py-3.5 rounded-sm font-semibold text-sm transition-all duration-300 ${
-                    plan.popular
-                      ? "bg-gold text-primary-foreground hover:bg-gold-light hover:shadow-[0_0_20px_oklch(0.78_0.12_75/0.3)]"
-                      : "border border-gold/50 text-gold hover:bg-gold hover:text-primary-foreground"
-                  }`}
-                >
-                  Solicitar Info
-                </a>
               </div>
+
+              {/* Price */}
+              <div className="mb-4">
+                <div className="flex items-baseline gap-1">
+                  <span className="font-display text-5xl md:text-6xl text-foreground">
+                    {plan.price}
+                  </span>
+                  <span className="text-muted-foreground text-sm">
+                    {plan.priceNote}
+                  </span>
+                </div>
+                {plan.setup && (
+                  <p className="text-xs text-gold mt-2 font-medium">
+                    + {plan.setup} (pago único)
+                  </p>
+                )}
+              </div>
+
+              {/* Description */}
+              <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+                {plan.description}
+              </p>
+
+              {/* Features - show first 4 or all */}
+              <ul className="space-y-3 mb-4 flex-1">
+                {(expandedPlan === index
+                  ? plan.features
+                  : plan.features.slice(0, 4)
+                ).map((feature) => (
+                  <li key={feature} className="flex items-start gap-3">
+                    <Check className="w-4 h-4 text-gold mt-0.5 shrink-0" />
+                    <span className="text-sm text-foreground/80">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+
+              {/* Expand/Collapse button */}
+              {plan.features.length > 4 && (
+                <button
+                  onClick={() => toggleExpand(index)}
+                  className="flex items-center gap-1 text-xs text-muted-foreground hover:text-gold transition-colors mb-6 cursor-pointer"
+                >
+                  {expandedPlan === index ? (
+                    <>
+                      Ver menos <ChevronUp className="w-3 h-3" />
+                    </>
+                  ) : (
+                    <>
+                      Ver todas las funciones ({plan.features.length}){" "}
+                      <ChevronDown className="w-3 h-3" />
+                    </>
+                  )}
+                </button>
+              )}
+
+              {/* CTA */}
+              <a
+                href="#contacto"
+                className={`block text-center py-3.5 rounded-lg font-semibold text-sm transition-all duration-300 mt-auto ${
+                  plan.popular
+                    ? "bg-gold text-primary-foreground hover:bg-gold-light hover:shadow-[0_0_20px_oklch(0.78_0.12_75/0.3)]"
+                    : "border border-gold/50 text-gold hover:bg-gold hover:text-primary-foreground"
+                }`}
+              >
+                Empezar gratis
+              </a>
             </motion.div>
           ))}
         </div>
@@ -149,11 +179,15 @@ export default function Pricing() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-center mt-12"
+          className="text-center mt-10"
         >
-          <div className="inline-flex items-center gap-2 px-6 py-3 border border-gold/20 rounded-sm bg-gold/5">
+          <p className="text-sm text-muted-foreground">
+            Soporte por WhatsApp incluido en todos los planes.
+          </p>
+          <div className="inline-flex items-center gap-2 px-6 py-3 mt-4 border border-gold/20 rounded-lg bg-gold/5">
             <span className="text-sm text-foreground">
-              Posicionamiento en Google Maps disponible como <span className="text-gold font-semibold">servicio adicional</span>
+              Posicionamiento en Google Maps disponible como{" "}
+              <span className="text-gold font-semibold">servicio adicional</span>
             </span>
           </div>
         </motion.div>
