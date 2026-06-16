@@ -6,12 +6,17 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
+        {/* Soft blush base (shown if the image fails to load) */}
+        <div className="absolute inset-0 bg-gradient-to-br from-secondary via-background to-background" />
         <img
-          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663399306078/VfcBb45G5ghCMm6VPu8Ur7/hero-barbershop-dcNKK5rC2NJfUtNtnrU7Lv.webp"
-          alt="Barbería moderna"
+          src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1600&q=80"
+          alt="Centro de belleza moderno"
           className="w-full h-full object-cover"
+          onError={(e) => {
+            e.currentTarget.style.display = "none";
+          }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/30" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
       </div>
 
@@ -27,7 +32,7 @@ export default function Hero() {
           >
             <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
             <span className="text-sm text-gold font-medium">
-              Soluciones digitales para barberías
+              Soluciones digitales para centros de belleza
             </span>
           </motion.div>
 
@@ -40,8 +45,8 @@ export default function Hero() {
           >
             <span className="text-foreground">DIGITALIZA</span>
             <br />
-            <span className="text-foreground">TU </span>
-            <span className="text-gold gold-text-glow">BARBERÍA</span>
+            <span className="text-foreground">TU CENTRO DE </span>
+            <span className="text-gold gold-text-glow">BELLEZA</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -52,7 +57,7 @@ export default function Hero() {
             className="text-lg md:text-xl text-muted-foreground max-w-xl mb-10 leading-relaxed"
           >
             Sistemas de citas personalizados y posicionamiento en Google Maps.
-            Haz que tus clientes te encuentren y reserven sin esfuerzo.
+            Haz que tus clientas te encuentren y reserven su cita sin esfuerzo.
           </motion.p>
 
           {/* CTAs */}
@@ -64,7 +69,7 @@ export default function Hero() {
           >
             <a
               href="#contacto"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold text-primary-foreground font-semibold rounded-sm hover:bg-gold-light transition-all duration-300 hover:shadow-[0_0_30px_oklch(0.78_0.12_75/0.3)] group"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold text-primary-foreground font-semibold rounded-sm hover:bg-gold-light transition-all duration-300 hover:shadow-[0_0_30px_oklch(0.57_0.12_18/0.3)] group"
             >
               Solicitar Demo
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -88,7 +93,7 @@ export default function Hero() {
               <Calendar className="w-5 h-5 text-gold" />
               <div>
                 <p className="font-display text-2xl text-foreground">+500</p>
-                <p className="text-xs text-muted-foreground">Barberías digitalizadas</p>
+                <p className="text-xs text-muted-foreground">Centros de belleza digitalizados</p>
               </div>
             </div>
             <div className="flex items-center gap-3">

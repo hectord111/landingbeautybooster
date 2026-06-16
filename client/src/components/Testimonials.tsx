@@ -3,22 +3,22 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Carlos Martínez",
-    role: "Propietario de BarberKing",
+    name: "Laura Fernández",
+    role: "Propietaria de Glow Beauty Studio",
     location: "Madrid",
-    text: "Desde que implementamos BarberBooster, las reservas aumentaron un 60%. Ya no perdemos tiempo con llamadas y los clientes nos encuentran fácilmente en Google Maps.",
+    text: "Desde que implementamos BeautyBooster, las reservas aumentaron un 60%. Ya no perdemos tiempo con llamadas y mensajes, y las clientas nos encuentran fácilmente en Google Maps.",
     stars: 5,
   },
   {
-    name: "Alejandro Ruiz",
-    role: "Fundador de The Blade Studio",
+    name: "Marta Gómez",
+    role: "Fundadora de Nails & Co",
     location: "Barcelona",
-    text: "El sistema de citas es increíble. Personalizado con nuestra marca y nuestros colores. Los clientes nos dicen que es muy fácil de usar. La inversión se recuperó en el primer mes.",
+    text: "El sistema de citas es increíble. Personalizado con nuestra marca y nuestros colores. Las clientas nos dicen que reservar su manicura es facilísimo. La inversión se recuperó en el primer mes.",
     stars: 5,
   },
   {
-    name: "Miguel Ángel Torres",
-    role: "Director de Cortes Premium",
+    name: "Cristina López",
+    role: "Directora de Belle Époque Estética",
     location: "Valencia",
     text: "Pasamos de la posición 15 a la 2 en Google Maps en solo 3 meses. Los no-shows bajaron un 75% gracias a los recordatorios automáticos. Totalmente recomendable.",
     stars: 5,
@@ -41,7 +41,7 @@ export default function Testimonials() {
             Testimonios
           </p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-wide">
-            LO QUE DICEN <span className="text-gold">NUESTROS CLIENTES</span>
+            LO QUE DICEN <span className="text-gold">NUESTRAS CLIENTAS</span>
           </h2>
         </motion.div>
 

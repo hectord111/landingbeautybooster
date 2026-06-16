@@ -5,7 +5,7 @@ const steps = [
     number: "01",
     title: "CONSULTA GRATUITA",
     description:
-      "Analizamos tu barbería, tus necesidades y tus objetivos. Te proponemos la solución ideal sin compromiso.",
+      "Analizamos tu centro de belleza, tus necesidades y tus objetivos. Te proponemos la solución ideal sin compromiso.",
   },
   {
     number: "02",
@@ -91,7 +91,7 @@ export default function HowItWorks() {
           <div className="relative overflow-hidden rounded-sm border border-border">
             <img
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663399306078/VfcBb45G5ghCMm6VPu8Ur7/results-dashboard-DmprSAB3XeuQknayAygsVM.webp"
-              alt="Dashboard de resultados BarberBooster"
+              alt="Dashboard de resultados BeautyBooster"
               className="w-full h-auto object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />

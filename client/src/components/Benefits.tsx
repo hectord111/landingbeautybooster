@@ -12,7 +12,7 @@ const benefits = [
     icon: Users,
     title: "Más Clientes",
     description:
-      "Aparece en Google Maps cuando busquen barberías cerca. Atrae clientes nuevos cada día.",
+      "Aparece en Google Maps cuando busquen centros de belleza cerca. Atrae clientas nuevas cada día.",
   },
   {
     icon: Star,
@@ -30,7 +30,7 @@ const benefits = [
     icon: Shield,
     title: "Tu Marca, Tu Estilo",
     description:
-      "Sistema 100% personalizado con los colores y la identidad de tu barbería.",
+      "Sistema 100% personalizado con los colores y la identidad de tu centro de belleza.",
   },
   {
     icon: BarChart3,
@@ -59,7 +59,7 @@ export default function Benefits() {
             Beneficios
           </p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-wide">
-            ¿POR QUÉ <span className="text-gold">BARBERBOOSTER</span>?
+            ¿POR QUÉ <span className="text-gold">BEAUTYBOOSTER</span>?
           </h2>
         </motion.div>
 

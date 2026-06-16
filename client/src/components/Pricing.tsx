@@ -5,23 +5,23 @@ import { useState } from "react";
 const plans = [
   {
     name: "Independent",
-    subtitle: "Para un solo barbero",
+    subtitle: "Para una sola profesional",
     price: "19",
     priceNote: "€/mes",
     setup: "89€ de configuración inicial",
     description:
-      "Para barberos autónomos que quieren dejar de improvisar.",
+      "Para profesionales autónomas de la belleza que quieren dejar de improvisar.",
     features: [
       "Agenda inteligente",
       "Reservas online 24/7",
-      "Gestión completa de clientes",
+      "Gestión completa de clientas",
       "Recordatorios automáticos",
       "Estadísticas detalladas",
       "Control de horarios",
       "URL personalizada de reservas",
       "Web de reservas con tu marca",
-      "Código QR para tu barbería",
-      "Reseñas de clientes",
+      "Código QR para tu centro de belleza",
+      "Reseñas de clientas",
       "Galería de trabajos",
       "Gestión de servicios ilimitados",
       "Soporte por WhatsApp",
@@ -29,24 +29,24 @@ const plans = [
   },
   {
     name: "Unlimited",
-    subtitle: "Para barberías con 2 barberos o más",
+    subtitle: "Para centros con 2 profesionales o más",
     price: "29",
     priceNote: "€/mes",
     setup: "89€ de configuración inicial",
     popular: true,
     description:
-      "Para barberías con equipo que quieren el control total.",
+      "Para centros de belleza con equipo que quieren el control total.",
     features: [
       "Todo lo del plan Independent",
-      "Barberos ilimitados",
+      "Profesionales ilimitadas",
       "Gestión de equipo completa",
-      "Multicuenta (varias barberías)",
-      "Control de horarios por barbero",
+      "Multicuenta (varios centros)",
+      "Control de horarios por profesional",
     ],
   },
   {
     name: "Unlimited anual",
-    subtitle: "Para barberías con 2 barberos o más",
+    subtitle: "Para centros con 2 profesionales o más",
     price: "299",
     priceNote: "€/año",
     bestValue: true,
@@ -97,7 +97,7 @@ export default function Pricing() {
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className={`relative p-7 lg:p-8 rounded-lg border bg-card transition-all duration-500 group flex flex-col ${
                 plan.popular
-                  ? "border-gold/50 shadow-[0_0_30px_oklch(0.78_0.12_75/0.08)]"
+                  ? "border-gold/50 shadow-[0_0_30px_oklch(0.57_0.12_18/0.08)]"
                   : plan.bestValue
                   ? "border-gold/30"
                   : "border-border"
@@ -191,7 +191,7 @@ export default function Pricing() {
                 href="#contacto"
                 className={`block text-center py-3.5 rounded-lg font-semibold text-sm transition-all duration-300 mt-auto ${
                   plan.popular
-                    ? "bg-gold text-primary-foreground hover:bg-gold-light hover:shadow-[0_0_20px_oklch(0.78_0.12_75/0.3)]"
+                    ? "bg-gold text-primary-foreground hover:bg-gold-light hover:shadow-[0_0_20px_oklch(0.57_0.12_18/0.3)]"
                     : "border border-gold/50 text-gold hover:bg-gold hover:text-primary-foreground"
                 }`}
               >

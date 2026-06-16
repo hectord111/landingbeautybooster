@@ -45,13 +45,13 @@ export default function PrivacyPolicy() {
               </li>
               <li>
                 <strong>Correo electrónico:</strong>{" "}
-                <a href="mailto:admin@barberbooster.app">
-                  admin@barberbooster.app
+                <a href="mailto:admin@beautybooster.app">
+                  admin@beautybooster.app
                 </a>
               </li>
             </ul>
             <p>
-              En adelante, "BarberBooster" o "el Responsable".
+              En adelante, "BeautyBooster" o "el Responsable".
             </p>
           </Section>
 
@@ -67,8 +67,8 @@ export default function PrivacyPolicy() {
               <li>Dirección de correo electrónico.</li>
               <li>Número de teléfono.</li>
               <li>
-                Nombre del negocio o barbería y cualquier información que
-                incluyas en el mensaje.
+                Nombre del negocio o centro de belleza y cualquier información
+                que incluyas en el mensaje.
               </li>
               <li>
                 Datos de navegación y técnicos (dirección IP, tipo de
@@ -142,8 +142,8 @@ export default function PrivacyPolicy() {
             <p>
               Puedes ejercer en cualquier momento los siguientes derechos
               dirigiéndote a{" "}
-              <a href="mailto:admin@barberbooster.app">
-                admin@barberbooster.app
+              <a href="mailto:admin@beautybooster.app">
+                admin@beautybooster.app
               </a>
               , indicando el derecho que deseas ejercer y adjuntando copia de un
               documento que acredite tu identidad:

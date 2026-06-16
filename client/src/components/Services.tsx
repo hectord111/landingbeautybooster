@@ -5,13 +5,13 @@ const services = [
   {
     icon: Calendar,
     title: "SISTEMA DE CITAS",
-    subtitle: "Gestión completa de tu barbería",
+    subtitle: "Gestión completa de tu centro de belleza",
     description:
-      "Desarrollamos un sistema de reservas a medida con tu marca, colores y estilo. Gestiona varias barberías y barberos desde un solo panel. Tus clientes reservan 24/7 desde cualquier dispositivo.",
+      "Desarrollamos un sistema de reservas a medida con tu marca, colores y estilo. Gestiona varios centros y profesionales (uñas, peluquería, tratamientos faciales) desde un solo panel. Tus clientas reservan 24/7 desde cualquier dispositivo.",
     features: [
-      "Gestión de múltiples barberías y barberos",
-      "Control de horarios individuales por barbero",
-      "Recordatorios automáticos a tus clientes",
+      "Gestión de múltiples centros y profesionales",
+      "Control de horarios individuales por profesional",
+      "Recordatorios automáticos a tus clientas",
       "Panel de control con métricas en tiempo real",
     ],
     image: "/manus-storage/dashboard-screenshot_9eb38db3.png",
@@ -21,11 +21,11 @@ const services = [
     title: "WEB PERSONALIZADA DE RESERVAS",
     subtitle: "Tu página profesional de reservas",
     description:
-      "Creamos una web de reservas totalmente personalizada con la imagen de tu barbería. Tus clientes pueden reservar en menos de 30 segundos con una experiencia premium que refleja tu marca.",
+      "Creamos una web de reservas totalmente personalizada con la imagen de tu centro de belleza. Tus clientas pueden reservar su servicio en menos de 30 segundos con una experiencia premium que refleja tu marca.",
     features: [
       "Diseño personalizado con tu marca y colores",
       "Reserva online en menos de 30 segundos",
-      "Enlace público para compartir con clientes",
+      "Enlace público para compartir con tus clientas",
       "Optimizada para móvil y escritorio",
     ],
     image: "/manus-storage/booking-web-screenshot_d8d4f0e6.png",
@@ -35,7 +35,7 @@ const services = [
     title: "GOOGLE MAPS",
     subtitle: "Posicionamiento local",
     description:
-      "Optimizamos tu perfil de Google Business para que aparezcas en las primeras posiciones cuando alguien busque barberías cerca. Más visibilidad, más clientes.",
+      "Optimizamos tu perfil de Google Business para que aparezcas en las primeras posiciones cuando alguien busque peluquerías, salones de uñas o centros de estética cerca. Más visibilidad, más clientas.",
     features: [
       "Optimización completa de Google Business Profile",
       "Estrategia de reseñas y reputación online",
@@ -63,7 +63,7 @@ export default function Services() {
             Nuestros Servicios
           </p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-wide">
-            TODO LO QUE TU BARBERÍA
+            TODO LO QUE TU CENTRO DE BELLEZA
             <br />
             <span className="text-gold">NECESITA PARA CRECER</span>
           </h2>

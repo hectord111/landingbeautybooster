@@ -8,14 +8,14 @@ export default function CTA() {
     name: "",
     email: "",
     phone: "",
-    barbershop: "",
+    business: "",
     message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast.success("Mensaje enviado correctamente. Te contactaremos pronto.");
-    setFormData({ name: "", email: "", phone: "", barbershop: "", message: "" });
+    setFormData({ name: "", email: "", phone: "", business: "", message: "" });
   };
 
   return (
@@ -23,9 +23,12 @@ export default function CTA() {
       {/* Background image */}
       <div className="absolute inset-0 opacity-10">
         <img
-          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663399306078/VfcBb45G5ghCMm6VPu8Ur7/barber-tools-pattern-Kho7As2waBjc29aLCebMzD.webp"
-          alt="Herramientas de barbería sobre fondo oscuro"
+          src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1600&q=80"
+          alt="Productos de belleza y cosmética"
           className="w-full h-full object-cover"
+          onError={(e) => {
+            e.currentTarget.style.display = "none";
+          }}
         />
       </div>
       <div className="absolute inset-0 bg-background/95" />
@@ -43,13 +46,13 @@ export default function CTA() {
               Contacto
             </p>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-wide mb-6">
-              ¿LISTO PARA
+              ¿LISTA PARA
               <br />
-              <span className="text-gold">IMPULSAR</span> TU BARBERÍA?
+              <span className="text-gold">IMPULSAR</span> TU CENTRO DE BELLEZA?
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-10 max-w-md">
               Solicita una consulta gratuita y descubre cómo podemos ayudarte a
-              conseguir más clientes y automatizar tu gestión de citas.
+              conseguir más clientas y automatizar tu gestión de citas.
             </p>
 
             <div className="space-y-5">
@@ -68,7 +71,7 @@ export default function CTA() {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground">Email</p>
-                  <p className="text-foreground font-medium">admin@barberbooster.app</p>
+                  <p className="text-foreground font-medium">admin@beautybooster.app</p>
                 </div>
               </div>
 
@@ -136,16 +139,16 @@ export default function CTA() {
                 </div>
                 <div>
                   <label className="text-xs text-muted-foreground uppercase tracking-wider mb-2 block">
-                    Barbería
+                    Centro de belleza
                   </label>
                   <input
                     type="text"
-                    value={formData.barbershop}
+                    value={formData.business}
                     onChange={(e) =>
-                      setFormData({ ...formData, barbershop: e.target.value })
+                      setFormData({ ...formData, business: e.target.value })
                     }
                     className="w-full px-4 py-3 bg-input border border-border rounded-sm text-foreground text-sm focus:border-gold/50 focus:outline-none transition-colors"
-                    placeholder="Nombre de tu barbería"
+                    placeholder="Nombre de tu centro de belleza"
                   />
                 </div>
               </div>
@@ -167,7 +170,7 @@ export default function CTA() {
 
               <button
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-gold text-primary-foreground font-semibold rounded-sm hover:bg-gold-light transition-all duration-300 hover:shadow-[0_0_20px_oklch(0.78_0.12_75/0.3)]"
+                className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-gold text-primary-foreground font-semibold rounded-sm hover:bg-gold-light transition-all duration-300 hover:shadow-[0_0_20px_oklch(0.57_0.12_18/0.3)]"
               >
                 Enviar Mensaje
                 <Send className="w-4 h-4" />

@@ -42,13 +42,13 @@ export default function TermsOfUse() {
               </li>
               <li>
                 <strong>Correo electrónico:</strong>{" "}
-                <a href="mailto:admin@barberbooster.app">
-                  admin@barberbooster.app
+                <a href="mailto:admin@beautybooster.app">
+                  admin@beautybooster.app
                 </a>
               </li>
             </ul>
             <p>
-              En adelante, "BarberBooster" o "el Titular". El acceso al sitio web
+              En adelante, "BeautyBooster" o "el Titular". El acceso al sitio web
               implica la aceptación plena y sin reservas de estos Términos.
             </p>
           </Section>
@@ -56,9 +56,10 @@ export default function TermsOfUse() {
           <Section title="2. Objeto">
             <p>
               Este sitio web tiene como finalidad ofrecer información sobre los
-              servicios de BarberBooster, entre ellos sistemas de citas
+              servicios de BeautyBooster, entre ellos sistemas de citas
               personalizados, webs de reservas y posicionamiento en Google Maps
-              para barberías, así como permitir el contacto con el Titular.
+              para centros de belleza, así como permitir el contacto con el
+              Titular.
             </p>
           </Section>
 

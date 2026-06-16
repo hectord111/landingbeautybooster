@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <span className="font-display text-3xl tracking-wide text-gold">
-                BARBER
+                BEAUTY
               </span>
               <span className="font-display text-3xl tracking-wide text-foreground">
                 BOOSTER
@@ -18,8 +18,8 @@ export default function Footer() {
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
               Sistemas de citas personalizados y posicionamiento en Google Maps
-              para barberías que quieren crecer. Digitaliza tu negocio y
-              multiplica tus clientes.
+              para centros de belleza que quieren crecer. Digitaliza tu negocio y
+              multiplica tus clientas.
             </p>
             <div className="flex gap-3 mt-6">
               <a
@@ -104,7 +104,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="pt-8 border-t border-border/50 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground">
-            © 2026 BarberBooster. Todos los derechos reservados.
+            © 2026 BeautyBooster. Todos los derechos reservados.
           </p>
           <div className="flex gap-6">
             <Link href="/privacidad" className="text-xs text-muted-foreground hover:text-gold transition-colors">
