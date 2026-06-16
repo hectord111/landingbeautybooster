@@ -170,7 +170,7 @@ export default function CTA() {
 
               <button
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-gold text-primary-foreground font-semibold rounded-full hover:bg-gold-light transition-all duration-300 hover:shadow-[0_0_20px_oklch(0.6_0.15_350/0.35)]"
+                className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-gold text-primary-foreground font-semibold rounded-full hover:bg-gold-light transition-all duration-300 hover:shadow-[0_0_20px_oklch(0.64_0.105_350/0.35)]"
               >
                 Enviar Mensaje
                 <Send className="w-4 h-4" />

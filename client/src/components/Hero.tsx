@@ -69,7 +69,7 @@ export default function Hero() {
           >
             <a
               href="#contacto"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold text-primary-foreground font-semibold rounded-full hover:bg-gold-light transition-all duration-300 hover:shadow-[0_0_30px_oklch(0.6_0.15_350/0.35)] group"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold text-primary-foreground font-semibold rounded-full hover:bg-gold-light transition-all duration-300 hover:shadow-[0_0_30px_oklch(0.64_0.105_350/0.35)] group"
             >
               Solicitar Demo
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

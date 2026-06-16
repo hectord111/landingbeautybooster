@@ -60,7 +60,7 @@ export default function Navbar() {
             href="https://beautybooster.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-2.5 bg-gold text-primary-foreground font-semibold text-sm rounded-full hover:bg-gold-light transition-all duration-300 hover:shadow-[0_0_20px_oklch(0.6_0.15_350/0.35)]"
+            className="inline-flex items-center gap-2 px-6 py-2.5 bg-gold text-primary-foreground font-semibold text-sm rounded-full hover:bg-gold-light transition-all duration-300 hover:shadow-[0_0_20px_oklch(0.64_0.105_350/0.35)]"
           >
             Acceder a la App
             <ExternalLink className="w-3.5 h-3.5" />

@@ -97,7 +97,7 @@ export default function Pricing() {
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className={`relative p-7 lg:p-8 rounded-lg border bg-card transition-all duration-500 group flex flex-col ${
                 plan.popular
-                  ? "border-gold/50 shadow-[0_0_40px_oklch(0.6_0.15_350/0.12)]"
+                  ? "border-gold/50 shadow-[0_0_40px_oklch(0.64_0.105_350/0.12)]"
                   : plan.bestValue
                   ? "border-gold/30"
                   : "border-border"
@@ -191,7 +191,7 @@ export default function Pricing() {
                 href="#contacto"
                 className={`block text-center py-3.5 rounded-full font-semibold text-sm transition-all duration-300 mt-auto ${
                   plan.popular
-                    ? "bg-gold text-primary-foreground hover:bg-gold-light hover:shadow-[0_0_20px_oklch(0.6_0.15_350/0.35)]"
+                    ? "bg-gold text-primary-foreground hover:bg-gold-light hover:shadow-[0_0_20px_oklch(0.64_0.105_350/0.35)]"
                     : "border border-gold/50 text-gold hover:bg-gold hover:text-primary-foreground"
                 }`}
               >
