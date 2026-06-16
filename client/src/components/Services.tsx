@@ -4,7 +4,7 @@ import { Calendar, Globe, MapPin } from "lucide-react";
 const services = [
   {
     icon: Calendar,
-    title: "SISTEMA DE CITAS",
+    title: "Sistema de Citas",
     subtitle: "Gestión completa de tu centro de belleza",
     description:
       "Desarrollamos un sistema de reservas a medida con tu marca, colores y estilo. Gestiona varios centros y profesionales (uñas, peluquería, tratamientos faciales) desde un solo panel. Tus clientas reservan 24/7 desde cualquier dispositivo.",
@@ -18,7 +18,7 @@ const services = [
   },
   {
     icon: Globe,
-    title: "WEB PERSONALIZADA DE RESERVAS",
+    title: "Web Personalizada de Reservas",
     subtitle: "Tu página profesional de reservas",
     description:
       "Creamos una web de reservas totalmente personalizada con la imagen de tu centro de belleza. Tus clientas pueden reservar su servicio en menos de 30 segundos con una experiencia premium que refleja tu marca.",
@@ -32,7 +32,7 @@ const services = [
   },
   {
     icon: MapPin,
-    title: "GOOGLE MAPS",
+    title: "Google Maps",
     subtitle: "Posicionamiento local",
     description:
       "Optimizamos tu perfil de Google Business para que aparezcas en las primeras posiciones cuando alguien busque peluquerías, salones de uñas o centros de estética cerca. Más visibilidad, más clientas.",
@@ -62,10 +62,10 @@ export default function Services() {
           <p className="text-gold font-medium text-sm tracking-widest uppercase mb-3">
             Nuestros Servicios
           </p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-wide">
-            TODO LO QUE TU CENTRO DE BELLEZA
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-tight">
+            Todo lo que tu centro de belleza
             <br />
-            <span className="text-gold">NECESITA PARA CRECER</span>
+            <span className="text-gold italic">necesita para crecer</span>
           </h2>
         </motion.div>
 
@@ -92,7 +92,7 @@ export default function Services() {
                     {service.subtitle}
                   </span>
                 </div>
-                <h3 className="font-display text-3xl md:text-4xl text-foreground tracking-wide mb-4">
+                <h3 className="font-display text-3xl md:text-4xl text-foreground tracking-tight mb-4">
                   {service.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-8">

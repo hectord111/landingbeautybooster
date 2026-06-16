@@ -9,11 +9,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <span className="font-display text-3xl tracking-wide text-gold">
-                BEAUTY
+              <span className="font-display text-3xl tracking-tight text-gold italic">
+                Beauty
               </span>
-              <span className="font-display text-3xl tracking-wide text-foreground">
-                BOOSTER
+              <span className="font-display text-3xl tracking-tight text-foreground">
+                Booster
               </span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
@@ -45,8 +45,8 @@ export default function Footer() {
 
           {/* Links */}
           <div>
-            <h4 className="font-display text-sm tracking-wider text-foreground mb-4">
-              SERVICIOS
+            <h4 className="font-sans font-semibold text-xs uppercase tracking-widest text-foreground mb-4">
+              Servicios
             </h4>
             <ul className="space-y-2">
               <li>
@@ -73,8 +73,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-display text-sm tracking-wider text-foreground mb-4">
-              EMPRESA
+            <h4 className="font-sans font-semibold text-xs uppercase tracking-widest text-foreground mb-4">
+              Empresa
             </h4>
             <ul className="space-y-2">
               <li>

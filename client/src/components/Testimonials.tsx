@@ -40,8 +40,8 @@ export default function Testimonials() {
           <p className="text-gold font-medium text-sm tracking-widest uppercase mb-3">
             Testimonios
           </p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-wide">
-            LO QUE DICEN <span className="text-gold">NUESTRAS CLIENTAS</span>
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-tight">
+            Lo que dicen <span className="text-gold italic">nuestras clientas</span>
           </h2>
         </motion.div>
 

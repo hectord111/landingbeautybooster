@@ -16,10 +16,10 @@ export default function TermsOfUse() {
 
         <article className="max-w-3xl mx-auto prose-policy">
           <header className="mb-12">
-            <p className="text-xs tracking-widest text-gold uppercase mb-3">
+            <p className="text-xs tracking-tightst text-gold uppercase mb-3">
               Información legal
             </p>
-            <h1 className="font-display text-4xl md:text-5xl tracking-wide mb-4">
+            <h1 className="font-display text-4xl md:text-5xl tracking-tight mb-4">
               Términos de Uso
             </h1>
             <p className="text-sm text-muted-foreground">
@@ -166,7 +166,7 @@ function Section({
 }) {
   return (
     <section className="mb-10">
-      <h2 className="font-display text-xl md:text-2xl tracking-wide text-foreground mb-4">
+      <h2 className="font-display text-xl md:text-2xl tracking-tight text-foreground mb-4">
         {title}
       </h2>
       <div className="space-y-4 text-sm md:text-base text-muted-foreground leading-relaxed [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_a]:text-gold [&_a]:underline [&_a]:underline-offset-2 [&_strong]:text-foreground">

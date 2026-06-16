@@ -3,25 +3,25 @@ import { motion } from "framer-motion";
 const steps = [
   {
     number: "01",
-    title: "CONSULTA GRATUITA",
+    title: "Consulta gratuita",
     description:
       "Analizamos tu centro de belleza, tus necesidades y tus objetivos. Te proponemos la solución ideal sin compromiso.",
   },
   {
     number: "02",
-    title: "DISEÑO PERSONALIZADO",
+    title: "Diseño personalizado",
     description:
       "Creamos tu sistema de citas con tu marca y colores. Optimizamos tu perfil de Google Maps con estrategia local.",
   },
   {
     number: "03",
-    title: "LANZAMIENTO",
+    title: "Lanzamiento",
     description:
       "Implementamos todo en menos de 7 días. Te formamos para que domines el panel de control desde el primer día.",
   },
   {
     number: "04",
-    title: "CRECIMIENTO",
+    title: "Crecimiento",
     description:
       "Monitorizamos resultados y optimizamos continuamente. Más visibilidad, más reservas, más ingresos.",
   },
@@ -42,8 +42,8 @@ export default function HowItWorks() {
           <p className="text-gold font-medium text-sm tracking-widest uppercase mb-3">
             Proceso
           </p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-wide">
-            CÓMO <span className="text-gold">FUNCIONA</span>
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-tight">
+            Cómo <span className="text-gold italic">funciona</span>
           </h2>
         </motion.div>
 
@@ -68,7 +68,7 @@ export default function HowItWorks() {
                 <span className="font-display text-6xl text-gold/20 leading-none">
                   {step.number}
                 </span>
-                <h3 className="font-display text-xl tracking-wide text-foreground mt-4 mb-3">
+                <h3 className="font-display text-2xl text-foreground mt-4 mb-3">
                   {step.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
@@ -97,8 +97,8 @@ export default function HowItWorks() {
             <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
             <div className="absolute bottom-8 left-8">
               <p className="text-sm text-gold font-medium mb-1">Panel de Control</p>
-              <p className="font-display text-2xl text-foreground">
-                MÉTRICAS EN TIEMPO REAL
+              <p className="font-display text-2xl italic text-foreground">
+                Métricas en tiempo real
               </p>
             </div>
           </div>

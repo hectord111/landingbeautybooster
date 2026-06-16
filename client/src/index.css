@@ -40,48 +40,53 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  --font-display: "Bebas Neue", sans-serif;
-  --font-sans: "DM Sans", sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Poppins", "DM Sans", sans-serif;
   --font-mono: "Space Grotesk", monospace;
-  --color-gold: oklch(0.57 0.12 18);
-  --color-gold-light: oklch(0.66 0.11 20);
-  --color-gold-dark: oklch(0.48 0.13 15);
+  /* Rose / blush accent (kept under the "gold" name for compatibility) */
+  --color-gold: oklch(0.6 0.15 350);
+  --color-gold-light: oklch(0.69 0.13 350);
+  --color-gold-dark: oklch(0.51 0.16 350);
+  --color-rose: oklch(0.6 0.15 350);
+  --color-blush: oklch(0.93 0.05 350);
+  --color-mauve: oklch(0.62 0.08 330);
 }
 
 :root {
-  --radius: 0.5rem;
-  --background: oklch(0.985 0.006 50);
-  --foreground: oklch(0.27 0.02 350);
+  /* Softer, rounder corners for a more delicate, feminine feel */
+  --radius: 0.9rem;
+  --background: oklch(0.985 0.012 350);
+  --foreground: oklch(0.3 0.04 350);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.27 0.02 350);
+  --card-foreground: oklch(0.3 0.04 350);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.27 0.02 350);
-  --primary: oklch(0.57 0.12 18);
-  --primary-foreground: oklch(0.99 0.003 60);
-  --secondary: oklch(0.95 0.012 30);
-  --secondary-foreground: oklch(0.30 0.02 350);
-  --muted: oklch(0.955 0.008 50);
-  --muted-foreground: oklch(0.50 0.025 350);
-  --accent: oklch(0.95 0.012 30);
-  --accent-foreground: oklch(0.57 0.12 18);
+  --popover-foreground: oklch(0.3 0.04 350);
+  --primary: oklch(0.6 0.15 350);
+  --primary-foreground: oklch(0.99 0.004 350);
+  --secondary: oklch(0.95 0.022 350);
+  --secondary-foreground: oklch(0.33 0.035 350);
+  --muted: oklch(0.96 0.016 350);
+  --muted-foreground: oklch(0.51 0.035 350);
+  --accent: oklch(0.95 0.022 350);
+  --accent-foreground: oklch(0.6 0.15 350);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.90 0.01 30);
-  --input: oklch(0.96 0.008 50);
-  --ring: oklch(0.57 0.12 18);
-  --chart-1: oklch(0.57 0.12 18);
-  --chart-2: oklch(0.66 0.11 20);
-  --chart-3: oklch(0.74 0.09 25);
-  --chart-4: oklch(0.80 0.07 30);
-  --chart-5: oklch(0.86 0.05 35);
-  --sidebar: oklch(0.98 0.008 50);
-  --sidebar-foreground: oklch(0.27 0.02 350);
-  --sidebar-accent: oklch(0.95 0.012 30);
-  --sidebar-accent-foreground: oklch(0.57 0.12 18);
-  --sidebar-border: oklch(0.90 0.01 30);
-  --sidebar-ring: oklch(0.57 0.12 18);
-  --sidebar-primary: oklch(0.57 0.12 18);
-  --sidebar-primary-foreground: oklch(0.99 0.003 60);
+  --border: oklch(0.9 0.02 350);
+  --input: oklch(0.97 0.014 350);
+  --ring: oklch(0.6 0.15 350);
+  --chart-1: oklch(0.6 0.15 350);
+  --chart-2: oklch(0.68 0.13 350);
+  --chart-3: oklch(0.75 0.1 350);
+  --chart-4: oklch(0.82 0.08 348);
+  --chart-5: oklch(0.88 0.05 346);
+  --sidebar: oklch(0.98 0.012 350);
+  --sidebar-foreground: oklch(0.3 0.04 350);
+  --sidebar-accent: oklch(0.95 0.022 350);
+  --sidebar-accent-foreground: oklch(0.6 0.15 350);
+  --sidebar-border: oklch(0.9 0.02 350);
+  --sidebar-ring: oklch(0.6 0.15 350);
+  --sidebar-primary: oklch(0.6 0.15 350);
+  --sidebar-primary-foreground: oklch(0.99 0.004 350);
 }
 
 @layer base {
@@ -134,35 +139,37 @@
   }
 
   .font-display {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Playfair Display", serif;
   }
 
   .text-gold {
-    color: oklch(0.57 0.12 18);
+    color: oklch(0.6 0.15 350);
   }
 
   .bg-gold {
-    background-color: oklch(0.57 0.12 18);
+    background-color: oklch(0.6 0.15 350);
   }
 
   .border-gold {
-    border-color: oklch(0.57 0.12 18);
+    border-color: oklch(0.6 0.15 350);
   }
 
   .gold-glow {
-    box-shadow: 0 0 30px oklch(0.57 0.12 18 / 0.18), 0 0 60px oklch(0.57 0.12 18 / 0.08);
+    box-shadow:
+      0 0 30px oklch(0.6 0.15 350 / 0.2),
+      0 0 60px oklch(0.6 0.15 350 / 0.1);
   }
 
   .gold-text-glow {
-    text-shadow: 0 0 18px oklch(0.57 0.12 18 / 0.22);
+    text-shadow: 0 0 22px oklch(0.6 0.15 350 / 0.28);
   }
 
   .section-dark {
-    background-color: oklch(0.955 0.012 35);
+    background-color: oklch(0.96 0.018 350);
   }
 
   .section-darker {
-    background-color: oklch(0.93 0.016 30);
+    background-color: oklch(0.93 0.026 348);
   }
 
   .grain-overlay {

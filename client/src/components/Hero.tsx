@@ -28,7 +28,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-4 py-2 border border-gold/30 rounded-sm bg-gold/5 mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 border border-gold/30 rounded-full bg-gold/5 mb-8"
           >
             <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
             <span className="text-sm text-gold font-medium">
@@ -41,12 +41,12 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9] tracking-wide mb-6"
+            className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.05] tracking-tight mb-6"
           >
-            <span className="text-foreground">DIGITALIZA</span>
+            <span className="text-foreground">Digitaliza</span>
             <br />
-            <span className="text-foreground">TU CENTRO DE </span>
-            <span className="text-gold gold-text-glow">BELLEZA</span>
+            <span className="text-foreground">tu centro de </span>
+            <span className="text-gold italic gold-text-glow">belleza</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -69,14 +69,14 @@ export default function Hero() {
           >
             <a
               href="#contacto"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold text-primary-foreground font-semibold rounded-sm hover:bg-gold-light transition-all duration-300 hover:shadow-[0_0_30px_oklch(0.57_0.12_18/0.3)] group"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold text-primary-foreground font-semibold rounded-full hover:bg-gold-light transition-all duration-300 hover:shadow-[0_0_30px_oklch(0.6_0.15_350/0.35)] group"
             >
               Solicitar Demo
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
               href="#precios"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-border text-foreground font-semibold rounded-sm hover:border-gold/50 hover:text-gold transition-all duration-300"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-border text-foreground font-semibold rounded-full hover:border-gold/50 hover:text-gold transition-all duration-300"
             >
               Ver Planes
             </a>

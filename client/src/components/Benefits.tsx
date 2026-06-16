@@ -58,8 +58,8 @@ export default function Benefits() {
           <p className="text-gold font-medium text-sm tracking-widest uppercase mb-3">
             Beneficios
           </p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-wide">
-            ¿POR QUÉ <span className="text-gold">BEAUTYBOOSTER</span>?
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-tight">
+            ¿Por qué <span className="text-gold italic">BeautyBooster</span>?
           </h2>
         </motion.div>
 
@@ -81,8 +81,8 @@ export default function Benefits() {
                 <div className="w-12 h-12 flex items-center justify-center border border-gold/20 rounded-sm mb-5 group-hover:border-gold/50 transition-colors duration-500">
                   <benefit.icon className="w-5 h-5 text-gold" />
                 </div>
-                <h3 className="font-display text-xl tracking-wide text-foreground mb-3">
-                  {benefit.title.toUpperCase()}
+                <h3 className="font-display text-2xl text-foreground mb-3">
+                  {benefit.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {benefit.description}

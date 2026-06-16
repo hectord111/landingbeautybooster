@@ -78,8 +78,8 @@ export default function Pricing() {
           transition={{ duration: 0.6 }}
           className="text-center mb-6"
         >
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-wide">
-            Elige tu plan
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-tight">
+            Elige tu <span className="text-gold italic">plan</span>
           </h2>
           <p className="text-muted-foreground mt-4 text-sm">
             15 días gratis · Sin permanencia · Sin excusas
@@ -97,7 +97,7 @@ export default function Pricing() {
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className={`relative p-7 lg:p-8 rounded-lg border bg-card transition-all duration-500 group flex flex-col ${
                 plan.popular
-                  ? "border-gold/50 shadow-[0_0_30px_oklch(0.57_0.12_18/0.08)]"
+                  ? "border-gold/50 shadow-[0_0_40px_oklch(0.6_0.15_350/0.12)]"
                   : plan.bestValue
                   ? "border-gold/30"
                   : "border-border"
@@ -118,7 +118,7 @@ export default function Pricing() {
 
               {/* Plan Name & Subtitle */}
               <div className="mb-5">
-                <h3 className="font-display text-xl tracking-wide text-foreground">
+                <h3 className="font-display text-2xl tracking-tight text-foreground">
                   {plan.name}
                 </h3>
                 <p className="text-xs text-muted-foreground mt-1">
@@ -189,9 +189,9 @@ export default function Pricing() {
               {/* CTA */}
               <a
                 href="#contacto"
-                className={`block text-center py-3.5 rounded-lg font-semibold text-sm transition-all duration-300 mt-auto ${
+                className={`block text-center py-3.5 rounded-full font-semibold text-sm transition-all duration-300 mt-auto ${
                   plan.popular
-                    ? "bg-gold text-primary-foreground hover:bg-gold-light hover:shadow-[0_0_20px_oklch(0.57_0.12_18/0.3)]"
+                    ? "bg-gold text-primary-foreground hover:bg-gold-light hover:shadow-[0_0_20px_oklch(0.6_0.15_350/0.35)]"
                     : "border border-gold/50 text-gold hover:bg-gold hover:text-primary-foreground"
                 }`}
               >

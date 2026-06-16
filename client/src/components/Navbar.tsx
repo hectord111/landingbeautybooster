@@ -31,11 +31,11 @@ export default function Navbar() {
       <div className="container flex items-center justify-between h-18 md:h-20">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
-          <span className="font-display text-3xl md:text-4xl tracking-wide text-gold">
-            BEAUTY
+          <span className="font-display text-3xl md:text-4xl tracking-tight text-gold italic">
+            Beauty
           </span>
-          <span className="font-display text-3xl md:text-4xl tracking-wide text-foreground">
-            BOOSTER
+          <span className="font-display text-3xl md:text-4xl tracking-tight text-foreground">
+            Booster
           </span>
         </a>
 
@@ -52,7 +52,7 @@ export default function Navbar() {
           ))}
           <a
             href="#contacto"
-            className="px-6 py-2.5 border border-gold/50 text-gold font-semibold text-sm rounded-sm hover:bg-gold/10 transition-all duration-300"
+            className="px-6 py-2.5 border border-gold/50 text-gold font-semibold text-sm rounded-full hover:bg-gold/10 transition-all duration-300"
           >
             Contactar
           </a>
@@ -60,7 +60,7 @@ export default function Navbar() {
             href="https://beautybooster.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-2.5 bg-gold text-primary-foreground font-semibold text-sm rounded-sm hover:bg-gold-light transition-all duration-300 hover:shadow-[0_0_20px_oklch(0.57_0.12_18/0.3)]"
+            className="inline-flex items-center gap-2 px-6 py-2.5 bg-gold text-primary-foreground font-semibold text-sm rounded-full hover:bg-gold-light transition-all duration-300 hover:shadow-[0_0_20px_oklch(0.6_0.15_350/0.35)]"
           >
             Acceder a la App
             <ExternalLink className="w-3.5 h-3.5" />
@@ -99,7 +99,7 @@ export default function Navbar() {
               <a
                 href="#contacto"
                 onClick={() => setMobileOpen(false)}
-                className="mt-2 px-6 py-3 border border-gold/50 text-gold font-semibold text-sm rounded-sm text-center"
+                className="mt-2 px-6 py-3 border border-gold/50 text-gold font-semibold text-sm rounded-full text-center"
               >
                 Contactar
               </a>
@@ -107,7 +107,7 @@ export default function Navbar() {
                 href="https://beautybooster.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 px-6 py-3 bg-gold text-primary-foreground font-semibold text-sm rounded-sm text-center"
+                className="flex items-center justify-center gap-2 px-6 py-3 bg-gold text-primary-foreground font-semibold text-sm rounded-full text-center"
               >
                 Acceder a la App
                 <ExternalLink className="w-3.5 h-3.5" />

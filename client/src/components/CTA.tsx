@@ -45,10 +45,10 @@ export default function CTA() {
             <p className="text-gold font-medium text-sm tracking-widest uppercase mb-3">
               Contacto
             </p>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-wide mb-6">
-              ¿LISTA PARA
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-tight mb-6">
+              ¿Lista para
               <br />
-              <span className="text-gold">IMPULSAR</span> TU CENTRO DE BELLEZA?
+              <span className="text-gold italic">impulsar</span> tu centro de belleza?
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-10 max-w-md">
               Solicita una consulta gratuita y descubre cómo podemos ayudarte a
@@ -170,7 +170,7 @@ export default function CTA() {
 
               <button
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-gold text-primary-foreground font-semibold rounded-sm hover:bg-gold-light transition-all duration-300 hover:shadow-[0_0_20px_oklch(0.57_0.12_18/0.3)]"
+                className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-gold text-primary-foreground font-semibold rounded-full hover:bg-gold-light transition-all duration-300 hover:shadow-[0_0_20px_oklch(0.6_0.15_350/0.35)]"
               >
                 Enviar Mensaje
                 <Send className="w-4 h-4" />
